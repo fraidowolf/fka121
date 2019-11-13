@@ -45,9 +45,9 @@ void run_cos_func(char const *filename,
 void calc_fft(int len)
 {
 	double  (*x)[3] = malloc(sizeof (double [len][3]));
-	char const *filename = "./with_FT.csv";  
-	double f=1; 
-	double phi=0; 
+	char const *filename = "./with_FT_N256.csv";  
+	double f=2; 
+	double phi=PI/2; 
 	double dt=0.1; 
 	double a=1;
 
@@ -71,7 +71,7 @@ int main()
 	run_cos_func(fname3, 250, 1, PI/2, 0.1, 1);
 
 	/* TASK 1.2 */
-	calc_fft(250);
+	calc_fft(256);		
 
 		
 
