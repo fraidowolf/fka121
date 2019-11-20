@@ -5,7 +5,6 @@ Created by AL on 2013-10-24.
 Further developed by Martin Gren on 2014-10-20.
 */
 
-
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>

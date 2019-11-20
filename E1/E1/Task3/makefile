@@ -6,7 +6,7 @@ CFLAGS = -O3 -W # -O3 gives optimization, -W gives warnings
 LIBS = -lm -lgsl -lgslcblas # libraries
 
 OBJECTS = fft_func.o main.o # object files to produce
-PROGRAM = powerspectrum # name of executable to be built
+PROGRAM = main # name of executable to be built
 
 #
 # Rule that every .o files depends upon on the .c version of the file. Build .o files

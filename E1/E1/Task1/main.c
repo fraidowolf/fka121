@@ -17,17 +17,18 @@ int main ()
 	int i;
 	double data[n];
 	double f = 2;
+	double phi = 0;
 	
 	/* declare file variables */
 	FILE *file1;	
 
 	/* calculate data points */
 	for (i = 0; i < n; i++) {
-		data[i] = cos(2*PI*f*dt*i);
+		data[i] = cos(2*PI*f*dt*i + phi);
 	}
 
 	/*Save function values in file*/
-	file1 = fopen("function.dat","w");
+	file1 = fopen("function_f2.dat","w");
 
 	for (i = 0; i < n; i++) {
 		fprintf (file1,"%e \t %e \n", i*dt, data[i]);
